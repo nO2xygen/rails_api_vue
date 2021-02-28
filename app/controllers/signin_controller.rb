@@ -31,5 +31,5 @@ class SigninController < ApplicationController
         def not_found
             render json: {error: 'Wrong email or password', status: :not_found}
         end
-    
+    #
 end
