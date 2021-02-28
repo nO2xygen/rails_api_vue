@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.input {
+  @apply appearance-none block w-full bg-gray-200 text-gray-500 border border-gray-200 rounded py-3 px-4 leading-tight;
+}
+
+.input:focus {
+  @apply outline-none bg-white border-gray-200;
+}
+
+.label {
+  @apply block uppercase tracking-wide text-gray-500 text-xs font-bold mb-2;
+}
+
+.select {
+  @apply appearance-none py-3 px-4 pr-8 block w-full bg-gray-200 border border-gray-200 text-gray-500
+    rounded leading-tight;
+
+  -webkit-appearance: none;
+}
+
+.select:focus {
+  @apply outline-none bg-white border-gray-200;
+}
+
+.link {
+  @apply no-underline;
+}
+
+.link-grey {
+  @apply text-gray-500;
+}
+
+.link-grey:hover {
+  @apply text-gray-500;
+}
