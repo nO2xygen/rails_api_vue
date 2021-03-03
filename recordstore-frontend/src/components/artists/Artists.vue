@@ -9,7 +9,7 @@
           placeholder="Type an arist name"
           v-model="newArtist.name" />
       </div>
-      <input type="submit" value="Add Artist" class="font-sans font-bold px-4 rounded cursor-pointer no-underline bg-green hover:bg-green-dark block w-full py-4 text-white items-center justify-center" />
+      <input type="submit" value="Add Artist" class="font-sans font-bold px-4 rounded cursor-pointer no-underline bg-green-500 hover:bg-green-400 block w-full py-4 text-white items-center justify-center" />
     </form>
 
     <hr class="border border-grey-light my-6" />
@@ -34,7 +34,7 @@
           <form action="" @submit.prevent="updateArtist(artist)">
             <div class="mb-6 p-4 bg-white rounded border border-grey-light mt-4">
               <input class="input" v-model="artist.name" />
-              <input type="submit" value="Update" class=" my-2 bg-transparent text-sm hover:bg-blue hover:text-white text-blue border border-blue no-underline font-bold py-2 px-4 rounded cursor-pointer">
+              <input type="submit" value="Update" class=" my-2 bg-transparent text-sm hover:bg-blue-400 hover:text-white text-blue-400 border border-blue no-underline font-bold py-2 px-4 rounded cursor-pointer">
             </div>
           </form>
         </div>

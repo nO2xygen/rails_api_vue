@@ -5,3 +5,6 @@
 #
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
+
+#Artist.create(name: 'Papa Roach')
+#Record.create(title: 'Last Resort', year: 2000, artist_id: 2)

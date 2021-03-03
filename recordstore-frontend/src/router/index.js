@@ -11,16 +11,6 @@ export default new Router({
   mode: 'history',
   routes: [
     {
-      path: '/',
-      name: 'Signin',
-      component: Signin
-    },
-    {
-      path: '/signup',
-      name: 'Signup',
-      component: Signup
-    },
-    {
       path: '/artists',
       name: 'Artists',
       component: Artists
@@ -29,6 +19,16 @@ export default new Router({
       path: '/records',
       name: 'Records',
       component: Records
+    },
+    {
+      path: '/',
+      name: 'Signin',
+      component: Signin
+    },
+    {
+      path: '/signup',
+      name: 'Signup',
+      component: Signup
     }
   ]
 })
