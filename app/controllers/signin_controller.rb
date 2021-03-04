@@ -1,5 +1,5 @@
 class SigninController < ApplicationController
-  before_action :authorize_access_request!, only: [:destroy]
+  before_action :authorize_access_request!, only: [:delete]
 
   def create
     user = User.find_by!(email: params[:email])
@@ -17,7 +17,7 @@ class SigninController < ApplicationController
     end
   end
 
-  def destroy
+  def delete
     session = JWTSessions::Session.new(payload: payload)
     session.flush_by_access_payload
     render json: :ok
