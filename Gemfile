@@ -9,7 +9,6 @@ gem 'rails', '~> 6.0.3', '>= 6.0.3.4'
 # Use Puma as the app server
 gem 'puma', '~> 4.1'
 
-gem 'sqlite3', '~> 1.4'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 # gem 'jbuilder', '~> 2.7'
 # Use Redis adapter to run Action Cable in production
@@ -37,3 +36,5 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+
+gem "sqlite3", "~> 1.4", :group => :development
