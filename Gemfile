@@ -13,6 +13,8 @@ gem 'puma'
 # gem 'jbuilder', '~> 2.5'
 # Use Redis adapter to run Action Cable in production
 gem 'redis'
+gem 'redis-namespace'
+gem 'redis-rails'
 # Use ActiveModel has_secure_password
 gem 'bcrypt'
 
