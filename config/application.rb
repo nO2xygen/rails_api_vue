@@ -23,7 +23,6 @@ module RecordstoreBackend
   class Application < Rails::Application
     # Initialize configuration defaults for originally generated Rails version.
     config.load_defaults 6.0
-    config.cache_store = :redis_cache_store, { url: 'redis://:p50417058e3a6fabc52f2d443334d803f840d2e20058244d55c6e458f133d7280@ec2-54-243-133-136.compute-1.amazonaws.com:13879' }
     # Settings in config/environments/* take precedence over those specified here.
     # Application configuration can go into files in config/initializers
     # -- all .rb files in that directory are automatically loaded after loading
@@ -33,6 +32,5 @@ module RecordstoreBackend
     # Middleware like session, flash, cookies can be added back manually.
     # Skip views, helpers and assets when generating a new resource.
     config.api_only = true
-    config.redis = { url: 'redis://:p50417058e3a6fabc52f2d443334d803f840d2e20058244d55c6e458f133d7280@ec2-54-243-133-136.compute-1.amazonaws.com:13879' }
   end
 end
