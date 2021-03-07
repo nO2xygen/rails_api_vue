@@ -54,7 +54,7 @@ export default {
       this.$router.replace('/records')
     },
     signinFailed (error) {
-      this.error = (error.response && error.response.data && error.response.data.error) || ''
+      this.error = (error.response && error.response.data && error.response.data.error)
       delete localStorage.csrf
       delete localStorage.signedIn
     },
